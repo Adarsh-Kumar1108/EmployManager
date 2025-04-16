@@ -1,12 +1,72 @@
-# React + Vite
+# EmployManager 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based employee management system with secure login, protected routes, and a clean UI using Tailwind CSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🔐 Login authentication with token-based session
+- 🛡️ Protected routes using React Router
+- 🎨 Tailwind CSS for responsive, modern styling
+- ⚡ Built with Vite for lightning-fast performance
+- 📦 Axios for API requests (reqres.in used as mock backend)
+- 📄 Editable user form with route-based navigation
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧰 Tech Stack
+
+- React
+- Vite
+- Tailwind CSS
+- Axios
+- React Router DOM
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/employ-manager.git
+cd employ-manager
+
+npm install
+npm run dev
+Visit: http://localhost:5173
+
+
+
+🛡️ Protected Routes
+/users – Shows list of users (accessible only if logged in)
+
+/edit/:id – Edit user form (protected)
+
+/ – Login page (auto-redirects if token exists)
+
+All protected routes are wrapped using ProtectedRoute.jsx.
+
+
+
+src/
+├── api/
+│   └── reqresApi.js       # Axios instance
+├── components/
+│   ├── EditUserForm.jsx
+│   └── ProtectedRoute.jsx
+├── pages/
+│   ├── LoginPage.jsx
+│   └── UserPage.jsx
+├── assets/
+│   └── logo.jpg
+├── App.jsx
+├── main.jsx
+└── index.css              # Tailwind config
+
+
+🙌 Author
+Adarsh Kumar
+Frontend Developer | React Enthusiast
+
