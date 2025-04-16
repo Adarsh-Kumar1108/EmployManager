@@ -17,8 +17,8 @@ const LoginForm = () => {
         password,
       });
       localStorage.setItem('token', res.data.token);
-      await navigate('/users');
-      window.location.reload();
+      navigate('/users');
+      // window.location.reload();
     } catch (err) {
       setError('Login failed. Please check your credentials.');
     }
@@ -86,6 +86,4 @@ export default LoginForm;
 
 
 
-// Email: eve.holt@reqres.in
 
-// Password: cityslicka
