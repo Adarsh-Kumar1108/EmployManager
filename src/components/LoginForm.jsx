@@ -18,7 +18,7 @@ const LoginForm = () => {
       });
       localStorage.setItem('token', res.data.token);
       navigate('/users');
-      // window.location.reload();
+      window.location.reload();
     } catch (err) {
       setError('Login failed. Please check your credentials.');
     }
