@@ -44,6 +44,15 @@ const UserList = () => {
     window.location.reload();
   };
 
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      navigate('/login');
+    }
+  }, []);
+  
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navbar */}
